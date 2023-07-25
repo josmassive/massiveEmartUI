@@ -7,14 +7,17 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ProductCard: View {
+    
+    var product : Product
+    
     var body: some View {
         VStack {
-            Text("Sprinke Donut").padding()
-            Image( "ProductRosquilla").resizable().aspectRatio(contentMode: .fit).frame(height: 120)
+            Text(product.title).padding()
+            Image( product.image).resizable().aspectRatio(contentMode: .fit).frame(height: 120)
                 .cornerRadius(16)
-            Text("2.99")
-            Text("La dona favorita de homero").padding()
+            Text("$ \(product.price)")
+            Text(product.description).padding()
         }
         .background(.yellow)
         //.border(.black, width:4)
@@ -29,8 +32,10 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ProductCard_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ProductCard(product: products[0])
     }
 }
+
+
