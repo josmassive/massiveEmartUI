@@ -18,7 +18,7 @@ struct ProductListView: View {
 //                ProductCard(product: products[1])
 //                ProductCard(product: products[2])
                 
-                ForEach(products, id: \.self){
+                ForEach(misProdductos, id: \.self){
                     product in ProductCard(product: product)
                 }
                 
