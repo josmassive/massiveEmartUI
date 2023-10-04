@@ -11,7 +11,8 @@ import SwiftUI
 struct massiveEmartUIApp: App {
     var body: some Scene {
         WindowGroup {
-          ProductListView()
+          //ProductListView()
+            HomeView()
         }
     }
 }

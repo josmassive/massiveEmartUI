@@ -19,7 +19,7 @@ struct ProductCard: View {
             Text("$ \(product.price)")
             Text(product.description).padding()
         }
-        .background(.yellow)
+        .background(.blue)
         //.border(.black, width:4)
         .overlay(
             RoundedRectangle(cornerRadius: 16)
