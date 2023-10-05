@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ProductListView: View {
-    
+    @ObservedObject var shoppingCartViewModel = ShoppingCardViewModel.shared
     @State var productSelected: Bool = false
-    @State var selectedProduct: Product = misProdductos[0]
+    //@State var selectedProduct: Product = misProdductos[0]
     
     let layout = [ GridItem(.adaptive(minimum: 150, maximum: 300), spacing: 4, alignment: .center)
     ]
@@ -23,14 +23,18 @@ struct ProductListView: View {
                 
                 ForEach(misProdductos, id: \.self){
                     product in ProductCard(product: product).onTapGesture {
-                        selectedProduct = product
+                        //selectedProduct = product
+                        shoppingCartViewModel.selectedItem = product
                         productSelected.toggle()
                     }
                 }
                 
             }
         }.sheet(isPresented: $productSelected){
-            ProductDetailView(product: selectedProduct)
+            if let prod = shoppingCartViewModel.selectedItem{
+                ProductDetailView(product: prod, isProductoPresented: $productSelected)
+            }
+            
         }
     }
 }
