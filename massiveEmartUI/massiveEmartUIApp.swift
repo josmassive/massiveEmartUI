@@ -13,6 +13,7 @@ struct massiveEmartUIApp: App {
         WindowGroup {
           //ProductListView()
             HomeView()
+            //ProductDetailView()
         }
     }
 }

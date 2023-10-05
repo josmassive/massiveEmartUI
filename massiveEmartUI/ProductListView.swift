@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ProductListView: View {
     
+    @State var productSelected: Bool = false
+    @State var selectedProduct: Product = misProdductos[0]
+    
     let layout = [ GridItem(.adaptive(minimum: 150, maximum: 300), spacing: 4, alignment: .center)
     ]
     var body: some View{
@@ -19,11 +22,15 @@ struct ProductListView: View {
 //                ProductCard(product: products[2])
                 
                 ForEach(misProdductos, id: \.self){
-                    product in ProductCard(product: product)
+                    product in ProductCard(product: product).onTapGesture {
+                        selectedProduct = product
+                        productSelected.toggle()
+                    }
                 }
                 
             }
-            
+        }.sheet(isPresented: $productSelected){
+            ProductDetailView(product: selectedProduct)
         }
     }
 }

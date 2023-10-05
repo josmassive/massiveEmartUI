@@ -12,6 +12,7 @@
 		2363E5BA2ACD141E004A3E4B /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363E5B92ACD141E004A3E4B /* PhoneView.swift */; };
 		2363E5BC2ACD183F004A3E4B /* ShoppingCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363E5BB2ACD183F004A3E4B /* ShoppingCartView.swift */; };
 		2363E5BE2ACD1994004A3E4B /* ShoppingCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363E5BD2ACD1994004A3E4B /* ShoppingCartCell.swift */; };
+		237B17F22ACE452300608C73 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237B17F12ACE452300608C73 /* ProductDetailView.swift */; };
 		23A0DE962A6F4C1700E985B4 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A0DE952A6F4C1700E985B4 /* Product.swift */; };
 		23AB56E52A6787790000F8B9 /* massiveEmartUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AB56E42A6787790000F8B9 /* massiveEmartUIApp.swift */; };
 		23AB56E72A6787790000F8B9 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AB56E62A6787790000F8B9 /* ProductCard.swift */; };
@@ -46,6 +47,7 @@
 		2363E5B92ACD141E004A3E4B /* PhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneView.swift; sourceTree = "<group>"; };
 		2363E5BB2ACD183F004A3E4B /* ShoppingCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartView.swift; sourceTree = "<group>"; };
 		2363E5BD2ACD1994004A3E4B /* ShoppingCartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartCell.swift; sourceTree = "<group>"; };
+		237B17F12ACE452300608C73 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		23A0DE952A6F4C1700E985B4 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		23AB56E12A6787790000F8B9 /* massiveEmartUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = massiveEmartUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23AB56E42A6787790000F8B9 /* massiveEmartUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = massiveEmartUIApp.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				2363E5B72ACD140E004A3E4B /* TabletView.swift */,
 				2363E5BB2ACD183F004A3E4B /* ShoppingCartView.swift */,
 				2363E5B92ACD141E004A3E4B /* PhoneView.swift */,
+				237B17F12ACE452300608C73 /* ProductDetailView.swift */,
 				2363E5BD2ACD1994004A3E4B /* ShoppingCartCell.swift */,
 				23AB56E62A6787790000F8B9 /* ProductCard.swift */,
 				2363E5B52ACD109C004A3E4B /* HomeView.swift */,
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23AB56E72A6787790000F8B9 /* ProductCard.swift in Sources */,
+				237B17F22ACE452300608C73 /* ProductDetailView.swift in Sources */,
 				2363E5BE2ACD1994004A3E4B /* ShoppingCartCell.swift in Sources */,
 				23A0DE962A6F4C1700E985B4 /* Product.swift in Sources */,
 				23AB56E52A6787790000F8B9 /* massiveEmartUIApp.swift in Sources */,
