@@ -13,11 +13,18 @@ struct ProductCard: View {
     
     var body: some View {
         VStack {
-            Text(product.title).padding()
+            Text(product.title)
+                .font(AppFont.title2.bold())
+                .multilineTextAlignment(.center)
+                .padding()
             Image( product.image).resizable().aspectRatio(contentMode: .fit).frame(height: 120)
                 .cornerRadius(16)
-            Text("$ \(product.price)")
-            Text(product.description).padding()
+            Text("$ \(product.price.formatAsDollar())")
+                .font(AppFont.body().bold())
+            Text(product.description)
+                .font(AppFont.caption1)
+                .multilineTextAlignment(.center)
+                .padding()
         }
         .background(.blue)
         //.border(.black, width:4)

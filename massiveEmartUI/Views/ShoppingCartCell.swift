@@ -19,9 +19,12 @@ struct ShoppingCartCell: View {
                 .frame(width: 40 , height: 40)
                 .cornerRadius(15)
             Text(product.title)
-            Text("\(shoppingCartViewModel.shoppingCart[product.id] ?? 1)" + "@" + "\(product.price)")
+                .font(AppFont.body().bold())
+            Text("\(shoppingCartViewModel.shoppingCart[product.id] ?? 1)" + "@" + product.price.formatAsDollar())
+                .font(AppFont.body().italic())
             Spacer()
-            Text("\(product.price * Double(shoppingCartViewModel.shoppingCart[product.id] ?? 1))")
+            Text((product.price * Double(shoppingCartViewModel.shoppingCart[product.id] ?? 1)).formatAsDollar())
+                .font(AppFont.body().bold())
         }
     }
 }

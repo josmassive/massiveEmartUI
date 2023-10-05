@@ -20,7 +20,7 @@ struct ProductDetailView: View {
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(height: 120)
-        Text("\(product.price)")
+        Text(product.price.formatAsDollar())
         Text(product.description)
         //Text("$1.99")
         //Text("Tasty Refreshing cola")
